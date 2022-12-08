@@ -12,6 +12,10 @@ og_image = soup.select_one('meta[property="og:image"]')
 og_title = soup.select_one('meta[property="og:title"]')
 og_description = soup.select_one('meta[property="og:description"]')
 
-print(og_image)
-print(og_title)
-print(og_description)
+image = og_image['content']
+title = og_title['content']
+desc = og_description['content']
+
+print(image)
+print(title)
+print(desc)
